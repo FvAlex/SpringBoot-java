@@ -1,0 +1,76 @@
+body{
+    background: url("../bcImg.jpg");
+}
+.centreInfo{
+    text-align: center;
+}
+
+/*Logo*/
+
+.logo{
+    text-align:center;
+    margin:auto;
+    display:flex;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+/*Menu*/
+
+.interface_menu{
+    background-color: white;
+    border-radius: 5%;
+    width: 500px;
+    height: 430px;
+    margin:auto;
+    display:flex;
+    opacity: 0.8;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.menu_titre{
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+/*Nom*/
+
+.box_nom{
+    margin-bottom: 25px;
+}
+
+/*Prenom*/
+
+.box_prenom{
+    margin-bottom: 25px;
+}
+
+/*Mail*/
+
+.box_mail{
+    margin-bottom: 25px;
+}
+
+/*Boutton*/
+
+.btn{
+    padding: 10px;
+}
+
+/*Message erreur*/
+
+.box_boutton_message{
+    flex-direction: row;
+    display: flex;
+}
+.message_erreur{
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    margin-bottom: 50px;
+}

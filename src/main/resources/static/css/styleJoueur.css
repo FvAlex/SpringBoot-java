@@ -1,0 +1,39 @@
+body{
+    background: url("../background_joueur.jpg");
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+}
+.navbar_menu{
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+.navbar_space_box_menu{
+    margin-right: 200px;
+}
+.navbar_menu--size{
+    font-size: 25pt;
+}
+
+    /*Box joueur */
+
+.box_joueur{
+    background-color: white;
+    border-radius: 5%;
+    width: 1450px;
+    height: 430px;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    opacity: 0.8;
+    margin-top: 80px;
+}
+.box_joueur_presentation{
+    margin-top: 70px;
+}
+.box_archipel{
+    margin-top: 30px;
+}
