@@ -10,6 +10,7 @@
     </head>
     <body>
 
-
+        <p> Modification réussi </p>
+        <p>Veuillez cliquer sur le lien ci-dessous pour revenir sur vos information : <a </p>
     </body>
 </html>
