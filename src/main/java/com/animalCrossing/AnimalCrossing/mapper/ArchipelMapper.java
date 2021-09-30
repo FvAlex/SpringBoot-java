@@ -11,12 +11,11 @@ public class ArchipelMapper implements RowMapper<Archipel> {
 
     @Override
     public Archipel mapRow(ResultSet rs,  int rowNum) throws SQLException{
-        System.out.println("ok");
+
         int id_joueur = rs.getInt("id_joueur");
         int id_archipel = rs.getInt("id_archipel");
         String Nom_archipel = rs.getString("Nom_archipel");
         String Localisation_archipel = rs.getString("Localisation_archipel");
-        System.out.println(id_archipel + Nom_archipel + Localisation_archipel);
 
         return new Archipel(id_joueur,id_archipel, Nom_archipel, Localisation_archipel);
     }

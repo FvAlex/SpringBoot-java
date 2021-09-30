@@ -1,5 +1,6 @@
 package com.animalCrossing.AnimalCrossing.dao;
 
+import com.animalCrossing.AnimalCrossing.AnimalCrossingApplication;
 import com.animalCrossing.AnimalCrossing.bdd.Joueur;
 import com.animalCrossing.AnimalCrossing.mapper.JoueurMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +28,21 @@ public class JoueurDAO extends JdbcDaoSupport {
 
         try{
             Joueur joueurInfo = this.getJdbcTemplate().queryForObject(sqlJoueur, paramsJoueur, mapperJoueur);
+
+            return joueurInfo;
+        }
+        catch (EmptyResultDataAccessException e){
+            return null;
+        }
+    }
+
+    public Joueur updateJoueur(String nom, String prenom, String mail){
+        String sqlupdateJoueur = "UPDATE Nom_joueur = ?, Prenom_joueur = ?, Mail_joueur = ? FROM Joueur WHERE id_joueur = ?";
+
+        Object[] joueur = new Object[] {nom, prenom, mail};
+        JoueurMapper Joueur = new JoueurMapper();
+        try{
+            Joueur joueurInfo = this.getJdbcTemplate().queryForObject(sqlupdateJoueur,joueur,Joueur);
 
             return joueurInfo;
         }

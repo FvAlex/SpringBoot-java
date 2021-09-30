@@ -1,5 +1,12 @@
+@font-face {
+    font-family: "Fink Heavy";
+    src: url(/fink_heavy.ttf);
+}
 body{
     background: url("../background_joueur.jpg");
+    background-repeat: no-repeat;
+    background-size: 2300px;
+    font-family: "Fink Heavy", serif;
 }
 .navbar{
     display: flex;
@@ -17,23 +24,111 @@ body{
 .navbar_menu--size{
     font-size: 25pt;
 }
-
+.image_logo{
+    display: flex;
+    margin: auto;
+}
     /*Box joueur */
 
-.box_joueur{
-    background-color: white;
-    border-radius: 5%;
-    width: 1450px;
-    height: 430px;
-    margin:auto;
-    display:flex;
-    flex-direction: column;
-    opacity: 0.8;
-    margin-top: 80px;
+.box_nookphone{
+    background-image: url("../nookphone.png");
+    background-repeat: no-repeat;
+    background-size: 320px;
+    width: 200px;
 }
-.box_joueur_presentation{
+.box_joueur_taille_para{
+    font-size: 12pt;
+}
+.box_modal_joueur{
+    width: 1350px;
+    margin: auto;
+    margin-top: 50px;
+}
+.box_modal_ligne_un{
+    display: flex;
+    flex-direction: row;
+    height: 430px;
+}
+.box_modal_ligne_deux{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px; 
+    height: 430px;
+    margin-bottom: 200px;
+}
+.box_modal_marginLeft{
+    margin-left: 200px;
+}
+.box_modal_un_joueur{
+    opacity: 0.9;
+    width: 400px;
+    height: 430px;
+}
+.box_modal_un_lieu{
+    opacity: 0.9;
+    width: 400px;
+}
+.box_modal_un_batiment{
+    opacity: 0.9;
+    width: 400px;
+}
+.box_modal_ligne_deux_foret{
+    opacity: 0.9;
+    width: 400px;
+}
+.box_modal_ligne_deux_autre{
+    opacity: 0.9;
+    width: 400px;
+}
+.taille_texte{
+    display: flex;
+    margin-left: 115px;
+    padding-bottom: 25px;
     margin-top: 70px;
 }
-.box_archipel{
-    margin-top: 30px;
+.taille_texte_lieu{
+    display: flex;
+    margin-left: 120px;
+    padding-bottom: 25px;
+    margin-top: 70px;
+}
+.box_taille_texte{
+    margin-left: 35px;
+}
+
+    /*Modal*/
+
+.button_modif--joueur{
+    margin-left: 140px;
+    margin-top: 80px;
+    width: 104px;
+    height: 40px;
+    font-size: 11pt;
+}
+.button_modif--lieu{
+    margin-left: 140px;
+    margin-top: 144px;
+    width: 104px;
+    height: 40px;
+    font-size: 11pt;
+}
+.button_modif--batiment{
+    margin-left: 140px;
+    margin-top: 144px;
+    width: 104px;
+    height: 40px;
+    font-size: 11pt;
+}
+.button_modif--foret{
+    margin-left: 140px;
+    margin-top: 144px;
+    width: 104px;
+    height: 40px;
+    font-size: 11pt;
+}
+.modal_padding_para{
+    margin-bottom: 0px;
+}
+.modal_padding_input{
+    margin-bottom: 10px;
 }

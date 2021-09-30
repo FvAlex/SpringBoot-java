@@ -1,5 +1,12 @@
+@font-face {
+    font-family: "Fink Heavy";
+    src: url(/fink_heavy.ttf);
+}
 body{
     background: url("../bcImg.jpg");
+    background-repeat: no-repeat;
+    background-size: 2300px;
+    font-family: "Fink Heavy", serif;
 }
 .centreInfo{
     text-align: center;
